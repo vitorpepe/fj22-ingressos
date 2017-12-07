@@ -36,7 +36,11 @@ public class Sala {
         
     }
 
-    public Integer getId() {
+    private void setPreco(BigDecimal preco) {
+		
+	}
+
+	public Integer getId() {
         return id;
     }
 

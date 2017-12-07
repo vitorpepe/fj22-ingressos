@@ -18,6 +18,7 @@ public class SalaController {
 
     @Autowired
     private SessaoDao sessaoDao;
+    @Autowired
     private SalaDao salaDao;
 
 
@@ -33,8 +34,6 @@ public class SalaController {
 
         return modelAndView;
     }
-
-
 
 
     @PostMapping("/admin/sala")
