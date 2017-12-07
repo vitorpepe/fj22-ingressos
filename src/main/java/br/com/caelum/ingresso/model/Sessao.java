@@ -21,7 +21,11 @@ public class Sessao {
 	@ManyToOne
 	private Filme filme;
 	
+	@ManyToOne
+	private Sessao sessao;
+	
 	private BigDecimal preco;
+	
 	
 	/** 
 	 * @deprecated hiberante only
@@ -39,7 +43,13 @@ public class Sessao {
 		
 	}
 	private void setPreco(BigDecimal preco) {
-		
+		this.preco=preco;
+	}
+	public Sessao getSessao() {
+		return sessao;
+	}
+	public void setSessao(Sessao sessao) {
+		this.sessao = sessao;
 	}
 	public Integer getId() {
 		return id;

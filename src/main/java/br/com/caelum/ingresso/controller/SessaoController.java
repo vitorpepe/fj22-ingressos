@@ -21,6 +21,7 @@ public class SessaoController {
 
 	@Autowired
 	private SessaoDao sessaoDao;
+	@Autowired
 	private SalaDao salaDao;
 	@Autowired
 	private FilmeDao filmeDao;
