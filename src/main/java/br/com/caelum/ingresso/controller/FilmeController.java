@@ -51,7 +51,7 @@ public class FilmeController {
 
 	@GetMapping("/filme/{id}/detalhe")
 	public	ModelAndView	detalhes(@PathVariable("id")	Integer	id){
-					ModelAndView	modelAndView	=	new	ModelAndView("/filme/detalhe");
+				ModelAndView	modelAndView	=	new	ModelAndView("/filme/detalhe");
 					Filme	filme	=	filmeDao.findOne(id);
 					List<Sessao>	sessoes	=	sessaoDao.buscaSessoesDoFilme(filme);
 					Optional<DetalhesDoFilme>	detalhesDoFilme	=	client.request(filme);
